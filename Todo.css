@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.TodoContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto; /* Task, Due Date, and Delete Button */
+    gap: 20px; /* Space between columns */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    align-items: center; /* Vertically center the content */
+}
+.todo-input{
+    font-size: 15px;
+    padding: 10px;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto; /* Task, Due Date, and Delete Button */
+    gap: 20px; /* Space between columns */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    align-items: center; /* Vertically center the content */
+}
+
+/* Style for the delete button */
+button{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn{
+    background-color: rgb(21, 230, 80);
+    padding: 20px 36px;
+}
+button:hover {
+    background-color: darkred;
+}
+.btn:hover {
+    background-color: rgb(1, 112, 27);
+}
+
+/* Style the task and date */
+.task-item {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.due-date {
+    text-align: left; /* Align date to the left */
+    color: gray;
+}
